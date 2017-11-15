@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Modificar</title>
     <link rel="stylesheet" href="./css/estilo.css">
-<script type="text/javascript" src="./js/controlador/modificar.js"></script>
+<script type="text/javascript" src="./JS/controlador/consultarProveedor.js"></script>
+<script type="text/javascript" src="./JS/controlador/ProveModificar.js"></script>
   </head>
   <body>
     <header>
@@ -23,7 +24,7 @@
 <div>
 <label for="">RFC: </label>
 <br>
-<input type="text" id="edad" class="caja">
+<input type="text" id="rfc" class="caja">
 </div>
 <div>
   <label for="">Email: </label>
@@ -31,11 +32,12 @@
   <input type="text" id="email" class="caja">
 </div>
 <div>
-<label for="">Lugar: </label>
+<label for="">Direccion: </label>
 <br>
-<input type="text" id="domicilio" class="caja">
+<input type="text" id="direccion" class="caja">
 </div>
-<button type="button" class="boton-ok" onclick="guardarCambios()">Guardar cambios</button>
+<button type="button" class="boton-ok" onclick="guardarCambiosProveedor()">Guardar cambios</button>
 </form>
   </body>
+  <script>cargarProveedor();</script>
 </html>

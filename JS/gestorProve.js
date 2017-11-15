@@ -39,8 +39,8 @@ bd.allDocs({include_docs:true,attachments:true,
       "<td>"+doc.rows[i].doc.email+"</td>"+
       "<td>"+doc.rows[i].doc.direccion+"</td>"+
 
-      "<td><button class='boton-no' onclick='eliminar(\""+doc.rows[i].doc._id+"\",\""+doc.rows[i].doc._rev+"\")'>Eliminar</button></td>"+
-      "<td><a class='boton' href='proveedorModificar.html?id="+doc.rows[i].doc._id+"&rev="+doc.rows[i].doc._rev+"'>Modificar</a></td>"+
+      "<td><button class='boton-no' onclick='eliminarProveedor(\""+doc.rows[i].doc._id+"\",\""+doc.rows[i].doc._rev+"\")'>Eliminar</button></td>"+
+      "<td><a class='boton' href='ProveMod.html?id="+doc.rows[i].doc._id+"&rev="+doc.rows[i].doc._rev+"'>Modificar</a></td>"+
       "</tr>";
     }
   }).catch(function(err){
