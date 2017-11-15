@@ -25,6 +25,7 @@ var c = new Proveedor(nombre,rfc,email,direccion);
 bd.put(c,function(err,doc){
   if(!err){
     alert('El Proveedor ha sido guardado');
+    location.reload();
   }
 });
 }

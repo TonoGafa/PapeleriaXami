@@ -30,7 +30,7 @@ function resultado(err,res){
     alert('No se puedieron guardar cambios');
   }else {
     alert('Los cambios se guardaron correctamente');
-    window.location='consulta.html';
+    window.location='ProveConsul.html';
   }
 }
 
