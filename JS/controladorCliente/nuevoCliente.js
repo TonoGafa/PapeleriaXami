@@ -8,6 +8,6 @@ var ape_ma = document.getElementById('Ape_Ma').value;
 var edad = document.getElementById('edad').value;
 var email = document.getElementById('email').value;
 
-gestor.guardarContacto(nombre,edad,email);
+gestor.guardarCliente(nombre,ape_pa,ape_ma,edad,email);
 
 }
