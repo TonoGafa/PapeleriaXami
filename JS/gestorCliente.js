@@ -26,7 +26,6 @@ bd.put(c,function(err,doc){
   if(!err){
     alert('El cliente ha sido guardado');
     location.reload();
-
   }
 });
 }
