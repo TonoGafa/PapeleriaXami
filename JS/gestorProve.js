@@ -20,7 +20,7 @@ function Proveedor(nombre,rfc,email,direccion){
 }
 
 function guardarProveedor(nombre,rfc,email,direccion){
-var c = new Contacto(nombre,rfc,email,direccion);
+var c = new Proveedor(nombre,rfc,email,direccion);
 bd.put(c,function(err,doc){
   if(!err){
     alert('El Proveedor ha sido guardado');
