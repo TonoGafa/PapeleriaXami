@@ -7,6 +7,7 @@
   </head>
   <body>
 
+<h1>Ingresar Cliente</h1>
 
     <form class="contenedor">
       <div>
@@ -14,23 +15,38 @@
       <br>
       <input type="text" id="nombre" class="caja">
       </div>
+
+      <div>
+      <label for="">Apellido Paterno: </label>
+      <br>
+      <input type="text" id="Ape_Pa" class="caja">
+      </div>
+
+      <div>
+      <label for="">Apellido Materno: </label>
+      <br>
+      <input type="text" id="Ape_Ma" class="caja">
+      </div>
+
       <div>
       <label for="">Edad: </label>
       <br>
-      <input type="text" id="edad" class="caja">
+      <input type="number" id="edad" class="caja">
       </div>
+
       <div>
         <label for="">Email: </label>
         <br>
-        <input type="text" id="email" class="caja">
+        <input type="email" id="email" class="caja">
       </div>
-      <button type="button" class="boton-ok" onclick="guardar()">Guardar</button>
+
+      <button type="button" class="boton-ok">Guardar</button>
     </form>
 
     <footer>
       <a href="clientes.html" class="boton">Regresar</a>
       <a href="index.html" class="boton">Menu Principal</a>
-      </footer>    
+      </footer>
   </body>
 
 </html>
