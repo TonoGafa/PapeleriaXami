@@ -24,7 +24,7 @@ var c = new Producto(codigoBa,producto,precio);
 bd.put(c,function(err,doc){
   if(!err){
     alert('El producto ha sido guardado');
-
+    location.reload();
   }
 });
 }
