@@ -4,8 +4,28 @@
     <meta charset="utf-8">
     <title>Nuevo Producto</title>
     <link rel="stylesheet" href="./css/estilo.css">
+    <script type="text/javascript" src="./js/controlador/nuevo.js"></script>
   </head>
   <body>
+    <h1>Añadir Producto</h1>
+    <form class="contenedor">
+      <div>
+      <label for="">Nombre: </label>
+      <br>
+      <input type="text" id="nombre" class="caja">
+      </div>
+      <div>
+      <label for="">Edad: </label>
+      <br>
+      <input type="text" id="edad" class="caja">
+      </div>
+      <div>
+        <label for="">Email: </label>
+        <br>
+        <input type="text" id="email" class="caja">
+      </div>
+      <button type="button" class="boton" onclick="guardar()">Guardar</button>
+    </form>
 
 
 
