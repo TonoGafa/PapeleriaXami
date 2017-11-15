@@ -55,7 +55,7 @@ function eliminar(id,rev){
     if (err) {
       alert('No se pudo eliminar')
     }else {
-      alert('Documento Eliminado!');
+      alert('Producto Eliminado!');
       location.reload();
     }
   });
