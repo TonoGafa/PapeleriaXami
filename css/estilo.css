@@ -86,7 +86,7 @@ background-color:forestgreen;
 }
 html,
 body {
-  background-image: url(p.jpg);
+  /*background-image: url(p.jpg);*/
   margin: 80px;
   text-emphasis-position: center;
   background-repeat:no-repeat;
