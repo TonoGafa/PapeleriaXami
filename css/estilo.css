@@ -3,13 +3,13 @@
   border-bottom: 3px solid yellow;
   border-top: 3px solid gray;
   width: 50%;
+
   font-size: 20px;
   text-align: center;
   padding: 10px;
 border-radius:50px 0px 50px 0px;
   margin: 50px 0px 50px 0px;
   background-color:deepskyblue;
-/*box-shadow: 0px 0px 10px yellow;*/
 
 }
 .Menu a {
@@ -17,7 +17,7 @@ border-radius:50px 0px 50px 0px;
   background-color: peru;
   text-decoration: none;
   border: 1px solid gray;
-  padding: 10px;
+  padding: 5px;
   color: black;
   cursor:pointer;
 }
@@ -89,7 +89,8 @@ background-color:forestgreen;
 }
 
 body {
-  /*background-color: aqua;*/
+
+  background-color:beige;
   margin: 80px;
   /*text-emphasis-position: center;*/
   /*background-repeat:no-repeat;*/
@@ -97,7 +98,8 @@ body {
 /*/  box-sizing: border-box;*/
   background-image: url("1.png");
   font-size: center;
-  font-family:fantasy;
+  text-align: center;
+  font-family: monospace;
 background-repeat: no-repeat;*/
 }
 h2{
@@ -130,6 +132,8 @@ background-color:mediumseagreen;*/
 }
 label {
   font-weight: bold;
+  font-size: 30px;
+
 }
 .contenedor-none,
 .contenedor {
@@ -148,9 +152,10 @@ table * {
   border: 1px solid black;
 }
 table > thead > tr {
-  background-color: darkgray;
+  background-color:burlywood;
   color: black;
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 30px;
 }
 table > tbody > tr:nth-child(even) {
   background-color: lightgray;
