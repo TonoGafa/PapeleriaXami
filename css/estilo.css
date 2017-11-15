@@ -1,23 +1,25 @@
-.menu {
+.Menu {
   display: inline-block;
   border-bottom: 1px solid gray;
   border-top: 1px solid gray;
   width: 98.3%;
-  text-align: center;
   font-size: 20px;
+  text-align: center;
   padding: 10px;
   margin: 50px 0px 50px 0px;
-  background-color: lightgray;
+  background-color:deepskyblue;
 }
-.menu a {
-  background-color: #2486cd;
+.Menu a {
+
+  background-color: peru;
   text-decoration: none;
   border: 1px solid gray;
   padding: 10px;
-  color: white;
+  color: black;
+  cursor:pointer;
 }
-.menu a:hover {
-  background-color: #96dcff;
+.Menu a:hover {
+background-color:forestgreen;
   border: 1px solid black;
   color: black;
   transition: 1s;
@@ -84,7 +86,10 @@
 }
 html,
 body {
-  margin: 0px;
+  background-image: url(p.jpg);
+  margin: 80px;
+  text-emphasis-position: center;
+  background-repeat:no-repeat;
   padding: 0px;
   box-sizing: border-box;
 }
