@@ -1,4 +1,4 @@
-var gestor = require('./js/gestorCliente');
+var gestor = require('./JS/gestorCliente');
 
 function mostrarCliente(err,doc){
   var cajaNombre = document.getElementById('nombre');
@@ -8,8 +8,8 @@ function mostrarCliente(err,doc){
   var cajaEmail = document.getElementById('email');
 
   cajaNombre.value = doc.nombre;
-  cajaApe_Pa.value = doc.Ape_Pa;
-  cajaApe_Ma.value = doc.Ape_Ma;
+  cajaApe_Pa.value = doc.ape_pa;
+  cajaApe_Ma.value = doc.ape_ma;
   cajaEdad.value = doc.edad;
   cajaEmail.value = doc.email;
 }
@@ -23,7 +23,7 @@ function cargarCliente(){
   document.getElementById('rev').value=rev;
 
 
-gestor.obtener(id,mostrar);
+gestor.obtenerCliente(id,mostrarCliente);
 
 }
 
@@ -32,7 +32,7 @@ function resultadoCliente(err,res){
     alert('No se puedieron guardar cambios');
   }else {
     alert('Los cambios se guardaron correctamente');
-    window.location='consulta.html';
+    window.location='clienteConsultar.html';
   }
 }
 
@@ -45,5 +45,5 @@ function guardarCambiosCliente(){
   var edad = document.getElementById('edad').value;
   var email = document.getElementById('email').value;
 
-  gestor.guardarCambios(id,rev,nombre,ape_pa,ape_ma,edad,email,resultado);
+  gestor.guardarCambiosCliente(id,rev,nombre,ape_pa,ape_ma,edad,email,resultadoCliente);
 }
