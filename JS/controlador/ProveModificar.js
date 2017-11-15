@@ -1,4 +1,4 @@
-var gestor = require('./js/gestorProve');
+var gestorProve = require('./js/gestorProve');
 
 function mostrar(err,doc){
   var cajaNombre = document.getElementById('nombre');
