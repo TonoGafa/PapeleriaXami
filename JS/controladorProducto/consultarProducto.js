@@ -7,7 +7,9 @@ function consultar(){
   gestor.consultar(contenido);
 }
 function eliminar(id,rev){
-  var res = confirm('Estas seguro de eliminar el documento?');
-  if (res = 1)
+  var res = confirm('Estas seguro de eliminar el producto?');
+  if (res == 1){
     gestor.eliminar(id,rev);
+  }
+
 }
