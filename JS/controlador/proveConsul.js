@@ -1,4 +1,4 @@
-var gestor = require('./js/gestor');
+var gestor = require('./JS/gestor');
 
 
 function consultar(){
