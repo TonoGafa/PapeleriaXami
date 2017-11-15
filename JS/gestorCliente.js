@@ -18,7 +18,7 @@ function Cliente(nombre,ape_pa,ape_ma,edad,email){
 
 function guardarCliente(nombre,ape_pa,ape_ma,edad,email){
 var c = new Contacto(nombre,ape_pa,ape_ma,edad,email);
-bd.put(c,function(err,doc){
+bdCli.put(c,function(err,doc){
   if(!err){
     alert('El cliente ha sido guardado');
   }
