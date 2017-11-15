@@ -4,7 +4,7 @@ var gestor = require('./JS/gestorProve');
 function consultar(){
   var contenido = document.getElementById('contenido');
 
-  gestor.consultar(contenido);
+  gestor.consultarProveedor(contenido);
 }
 
 function eliminar(id,rev){

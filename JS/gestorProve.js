@@ -3,7 +3,7 @@ exports.consultarProveedor=consultarProveedor;
 
 var PouchDB = require('./vendor/pouchdb');
 
-var bd = PouchDB('papeleria');
+var bd = PouchDB('Papeleria');
 
 
 function Proveedor(nombre,rfc,email,direccion){
