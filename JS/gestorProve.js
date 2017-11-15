@@ -1,12 +1,10 @@
 exports.guardarProveedor = guardarProveedor;
-exports.consultar=consultar;
-exports.eliminar=eliminar;
-exports.obtener=obtener;
-exports.guardarCambios=guardarCambios;
+exports.consultarProveedor=consultarProveedor;
 
 var PouchDB = require('./vendor/pouchdb');
 
 var bd = PouchDB('papeleria');
+
 
 function Proveedor(nombre,rfc,email,direccion){
   var obj = new Object();
@@ -28,7 +26,7 @@ bd.put(c,function(err,doc){
 });
 }
 
-function consultar(contenido){
+function consultarProveedor(contenido){
 bd.allDocs({include_docs:true,attachments:true,
   startkey:'proveedor'}).then(function(doc){
     for(var i=0;i<doc.rows.length;i++){
@@ -37,8 +35,9 @@ bd.allDocs({include_docs:true,attachments:true,
       "<td>"+doc.rows[i].doc.rfc+"</td>"+
       "<td>"+doc.rows[i].doc.email+"</td>"+
       "<td>"+doc.rows[i].doc.direccion+"</td>"+
+
       "<td><button class='boton-no' onclick='eliminar(\""+doc.rows[i].doc._id+"\",\""+doc.rows[i].doc._rev+"\")'>Eliminar</button></td>"+
-      "<td><a class='boton' href='modificar.html?id="+doc.rows[i].doc._id+"&rev="+doc.rows[i].doc._rev+"'>Modificar</a></td>"+
+      "<td><a class='boton' href='proveedorModificar.html?id="+doc.rows[i].doc._id+"&rev="+doc.rows[i].doc._rev+"'>Modificar</a></td>"+
       "</tr>";
     }
   }).catch(function(err){
@@ -46,22 +45,22 @@ bd.allDocs({include_docs:true,attachments:true,
   });
 }
 
-function eliminar(id,rev){
+function eliminarProveedor(id,rev){
   bd.remove(id,rev,function(err,res){
   if (err) {
     alert('No se pudo eliminar');
   }else {
-    alert('Proveedor eliminado');
+    alert('Documento eliminado');
     // window.location="consultar.html";
     location.reload();
   }
 });
 }
 
-function obtener(id,mostrar){
+function obtenerProveedor(id,mostrar){
   bd.get(id,mostrar);
 }
 
-function guardarCambios(id,rev,nombre,rfc,email,direccion,resultado){
+function guardarCambiosProveedor(id,rev,nombre,rfc,email,direccion,resultado){
   bd.put({_id:''+id,_rev:rev,nombre:''+nombre,rfc:''+rfc,email:''+email,direccion:''+direccion},resultado);
 }
