@@ -1,6 +1,6 @@
 var gestor = require('./js/gestorCliente');
 
-function guardar(){
+function guardarCliente(){
 
 var nombre = document.getElementById('nombre').value;
 var ape_pa = document.getElementById('Ape_Pa').value;
