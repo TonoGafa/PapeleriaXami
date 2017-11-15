@@ -6,14 +6,15 @@
     <link rel="stylesheet" href="./css/estilo.css">
   </head>
   <body>
+    <h1>Consultar Producto</h1>
     <div class="contenedor">
       <table>
         <thead>
           <tr>
-            <th>NOMBRE</th>
-            <th>EDAD</th>
-            <th>EMAIL</th>
-            <th colspan="2">Operaciones</th>
+            <th>ID</th>
+            <th>PRODUCTO</th>
+            <th>PRECIO</th>
+            <th colspan="2">OPERACIONES</th>
           </tr>
         </thead>
         <tbody id="contenido">
@@ -24,7 +25,13 @@
 
 
 
+    <footer>
+      <a href="productos.html" class="boton-no">Regresar</a>
+      <a href="index.html" class="boton-ok">Menu Principal</a>
 
-    <a href="productos.html" class="boton-ok">Regresar</a>
+
+    </footer>
   </body>
+  <script src="./js/controladorProducto/consultarProducto.js"></script>
+  <script>consultar();</script>
 </html>

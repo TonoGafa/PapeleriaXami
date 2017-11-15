@@ -3,37 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Modificar Producto</title>
-<<<<<<< HEAD
     <link rel="stylesheet" href="./css/estilo.css">
-    <script type="text/javascript" src="./js/controlador/modificar.js"></script>
-=======
-    <link rel="stylesheet" href="/css/estilo.css">
->>>>>>> 4478b480ee7facf9c32003dfc945d67d1cd7d271
+    <script type="text/javascript" src="./js/controladorProducto/modificarProducto.js"></script>
   </head>
   <body>
+    <h1>Modificar Producto</h1>
     <form class="contenedor">
       <input type="hidden" value="0" id="id">
       <input type="hidden" value="0" id="rev">
       <div>
-        <label for="">Nombre: </label>
+        <label for="">ID: </label>
         <br>
-        <input type="text" id="nombre" class="caja">
+        <input type="text" id="codigoBa" class="caja">
       </div>
       <div>
-        <label for="">Edad: </label>
+        <label for="">PRODUCTO: </label>
         <br>
-        <input type="text" id="edad" class="caja">
+        <input type="text" id="producto" class="caja">
       </div>
       <div>
-        <label for="">Email: </label>
+        <label for="">PRECIO: </label>
         <br>
-        <input type="text" id="email" class="caja">
+        <input type="text" id="precio" class="caja">
       </div>
-      <button type="button" class="boton-ok" onclick="guardarCambios()">Guardar Cambios</button>
+      <button type="button" class="boton" onclick="guardarCambios()">Guardar Cambios</button>
     </form>
+    <footer>
+      <a href="productoCon.html" class="boton-no">Regresar</a>
+      <a href="productos.html" class="boton-ok">Menu Principal</a>
+
+
+    </footer>
 
 
 
-    <a href="productos.html" class="boton-ok">Regresar</a>
+
   </body>
+  <script>cargar();</script>
 </html>
