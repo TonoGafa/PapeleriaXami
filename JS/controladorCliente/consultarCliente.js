@@ -1,4 +1,4 @@
-var gestor = require('./js/gestorCliente');
+var gestor = require('./JS/gestorCliente');
 
 
 function consultarCliente(){

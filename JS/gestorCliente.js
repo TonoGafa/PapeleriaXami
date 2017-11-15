@@ -1,5 +1,8 @@
 exports.guardarCliente = guardarCliente;
 exports.consultarCliente=consultarCliente;
+exports.eliminarCliente=eliminarCliente;
+exports.obtenerCliente=obtenerCliente;
+exports.guardarCambiosCliente=guardarCambiosCliente;
 
 var PouchDB = require('./vendor/pouchdb');
 
@@ -22,6 +25,8 @@ var c = new Cliente(nombre,ape_pa,ape_ma,edad,email);
 bd.put(c,function(err,doc){
   if(!err){
     alert('El cliente ha sido guardado');
+    location.reload();
+
   }
 });
 }
@@ -36,7 +41,7 @@ bd.allDocs({include_docs:true,attachments:true,
       "<td>"+doc.rows[i].doc.ape_ma+"</td>"+
       "<td>"+doc.rows[i].doc.edad+"</td>"+
       "<td>"+doc.rows[i].doc.email+"</td>"+
-      "<td><button class='boton-no' onclick='eliminar(\""+doc.rows[i].doc._id+"\",\""+doc.rows[i].doc._rev+"\")'>Eliminar</button></td>"+
+      "<td><button class='boton-no' onclick='eliminarCliente(\""+doc.rows[i].doc._id+"\",\""+doc.rows[i].doc._rev+"\")'>Eliminar</button></td>"+
       "<td><a class='boton' href='clienteModificar.html?id="+doc.rows[i].doc._id+"&rev="+doc.rows[i].doc._rev+"'>Modificar</a></td>"+
       "</tr>";
     }
@@ -48,19 +53,19 @@ bd.allDocs({include_docs:true,attachments:true,
 function eliminarCliente(id,rev){
   bd.remove(id,rev,function(err,res){
   if (err) {
-    alert('No se pudo eliminar');
+    alert('No se pudo eliminar el cliente');
   }else {
-    alert('Documento eliminado');
+    alert('Cliente eliminado');
     // window.location="consultar.html";
     location.reload();
   }
 });
 }
 
-function obtenerCliente(id,mostrar){
-  bd.get(id,mostrar);
+function obtenerCliente(id,mostrarCliente){
+  bd.get(id,mostrarCliente);
 }
 
-function guardarCambiosCliente(id,rev,nombre,edad,email,resultado){
-  bd.put({_id:''+id,_rev:rev,nombre:''+nombre,edad:''+edad,email:''+email},resultado);
+function guardarCambiosCliente(id,rev,nombre,ape_pa,ape_ma,edad,email,resultado){
+  bd.put({_id:''+id,_rev:rev,nombre:''+nombre,ape_pa:''+ape_pa,ape_ma:''+ape_ma,edad:''+edad,email:''+email},resultado);
 }
