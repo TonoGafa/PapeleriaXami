@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Modificar</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+<script type="text/javascript" src="./js/controlador/modificar.js"></script>
+  </head>
+  <body>
+    <header>
+    <a href="consulta.html" class="boton">Regresar</a>
+</header>
+
+<form class="contenedor">
+<!-- hidden es una caja oculta -->
+<input type="hidden" value="0" id="id">
+<input type="hidden" value="0" id="rev">
+<div>
+<label for="">Nombre: </label>
+<br>
+<input type="text" id="nombre" class="caja">
+</div>
+<div>
+<label for="">RFC: </label>
+<br>
+<input type="text" id="edad" class="caja">
+</div>
+<div>
+  <label for="">Email: </label>
+  <br>
+  <input type="text" id="email" class="caja">
+</div>
+<div>
+<label for="">Lugar: </label>
+<br>
+<input type="text" id="domicilio" class="caja">
+</div>
+<button type="button" class="boton-ok" onclick="guardarCambios()">Guardar cambios</button>
+</form>
+  </body>
+</html>
