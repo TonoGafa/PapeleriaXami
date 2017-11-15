@@ -8,7 +8,7 @@ exports.guardarCambios=guardarCambios;
 
 var PouchDB = require('./vendor/pouchdb');
 
-var bd = PouchDB('Papeleria');
+var bd = PouchDB('papeleria');
 
 function Producto(codigoBa,producto,precio){
   var obj = new Object();
