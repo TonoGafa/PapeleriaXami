@@ -1,5 +1,8 @@
 exports.guardarProveedor = guardarProveedor;
 exports.consultarProveedor=consultarProveedor;
+exports.eliminarProveedor=eliminarProveedor;
+exports.obtenerProveedor=obtenerProveedor;
+exports.guardarCambiosProveedor=guardarCambiosProveedor;
 
 var PouchDB = require('./vendor/pouchdb');
 
