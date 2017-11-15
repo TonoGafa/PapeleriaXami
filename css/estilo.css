@@ -94,7 +94,7 @@ body {
   margin: 80px;
   padding: 0px;
   background-image: url("1.png");
-  font-size:100%;
+  font-size:80%;
   text-align: center;
   font-family:sans-serif;
 background-repeat: no-repeat;
@@ -103,7 +103,6 @@ h2{
 text-shadow: 0px 0px 10px yellow;
 }
 
-p{background-image: url("2.png");}
 
 .div,h3,h1{
 
@@ -143,6 +142,7 @@ label {
   border: 1px solid lightgray;
   border-radius: 4px;
   box-shadow: 0.5px 0.5px 10px gray;
+  background-image: url("2.png");
 }
 table {
   border-collapse: collapse;
