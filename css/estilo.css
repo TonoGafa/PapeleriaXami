@@ -2,10 +2,11 @@
   display: inline-block;
   border-bottom: 3px solid yellow;
   border-top: 3px solid gray;
-  width: 98.3%;
+  width: 50%;
   font-size: 20px;
   text-align: center;
   padding: 10px;
+border-radius:50px 0px 50px 0px;
   margin: 50px 0px 50px 0px;
   background-color:deepskyblue;
 /*box-shadow: 0px 0px 10px yellow;*/
@@ -34,8 +35,8 @@ background-color:forestgreen;
   border-radius: 8px;
   margin: 5px;
   padding: 5px;
-  font-size: 16px;
-  color: white;
+  font-size: 25px;
+  color: black;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
@@ -43,7 +44,7 @@ background-color:forestgreen;
   text-decoration: none;
 }
 .boton-ok {
-  background-color: #29af2a;
+  background-color: darkgreen;
   border-color: #165c16;
 }
 .boton-no {
@@ -51,22 +52,22 @@ background-color:forestgreen;
   border-color: #813939;
 }
 .boton-ok:hover {
-  background-color: #63db64;
+  background-color: darkred;
   box-shadow: 0px 0px 8px #0c330c;
   transition: 0.5s;
-  color: #0c330c;
+  color: black;
 }
 .boton-no:hover {
-  background-color: #daacac;
+  background-color: darkred;
   box-shadow: 0px 0px 8px #5e2929;
   transition: 0.5s;
-  color: #5e2929;
+  color: black;
 }
 .boton:hover {
-  background-color: #c3d3ee;
+  background-color :darkred;
   box-shadow: 0px 0px 8px #284d8a;
   transition: 0.5s;
-  color: #284d8a;
+  color: black;
 }
 .caja,
 .caja-error {
@@ -86,16 +87,18 @@ background-color:forestgreen;
   border: 0.5px solid #d44018;
   box-shadow: 0px 0px 10px #ee8264;
 }
-html,
+
 body {
-  background-color: aqua;
-  margin: 25px;
+  /*background-color: aqua;*/
+  margin: 80px;
   /*text-emphasis-position: center;*/
   /*background-repeat:no-repeat;*/
   padding: 0px;
 /*/  box-sizing: border-box;*/
-  background-image: url("1.jpg");
-/*background-repeat: no-repeat;*/
+  background-image: url("1.png");
+  font-size: center;
+  font-family:fantasy;
+background-repeat: no-repeat;*/
 }
 h2{
 text-shadow: 0px 0px 10px yellow;
@@ -105,12 +108,15 @@ text-shadow: 0px 0px 10px yellow;
   color:brown;
   text-align: center;
 text-shadow: 0px 0px 10px yellow;
+font-weight:normal;
   /*cursor: pointer;*/
 }
 .Ajuste{
   border:4px solid chartreuse;
-box-shadow:0px 0px 10px chartreuse;
-background-color:mediumseagreen;
+box-shadow:0px 0px 10px chartreuse;*/
+background-color:mediumseagreen;*/
+
+  margin-right: 5%;
 }
 
 .info {
@@ -143,7 +149,7 @@ table * {
 }
 table > thead > tr {
   background-color: darkgray;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 table > tbody > tr:nth-child(even) {
@@ -151,6 +157,6 @@ table > tbody > tr:nth-child(even) {
 }
 table > tbody > tr:hover {
   background-color: darkblue;
-  color: white;
+  color: black;
   cursor: pointer;
 }
